@@ -4,10 +4,7 @@
 
 **Challenge 1:**
 1. Given a string of characters, return a substring of unique characters?
-<details><summary>**Solution**</summary>
-<p>
-
-
+<details><summary>Solution</summary>
     ```swift
       // Receives a string of characters as an argument
       func uniqueCharactersInString(_ str: String) -> String {
@@ -27,6 +24,4 @@
     let result = uniqueCharactersInString(myString)
     print(result) //This myaplenot
     ```
-
-</p>
 </details>
