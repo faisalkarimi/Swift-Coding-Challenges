@@ -16,7 +16,7 @@
 - [Challenge 10](#challenge-10)
 - [Challenge 11](#challenge-11)
 
-**#Challenge 1:**
+**# Challenge 1:**
 
 Q. Given a string of characters, return a substring of unique characters?
 
@@ -45,7 +45,7 @@ let result = uniqueCharactersInString(myString)
 print(result) //Output: This myaplenot
 ```
 
-**#Challenge 2:**
+**# Challenge 2:**
 
 Q. Write a function to compare if arms of two individuals are equally strong?
 
@@ -78,7 +78,7 @@ func areEquallyStrong(personOne: Dictionary<String, Int>, personTwo: Dictionary<
     print(areEquallyStrong(personOne: myArm, personTwo: myFriendsArm))
 ```
 
-**#Challenge 3:**
+**# Challenge 3:**
 
 Q. Write a function to determine if two arrays are similar?
 
@@ -108,7 +108,7 @@ let arr2 = [2,1,2]
 
 print(isSimilar(arrayOne: arr1, arrayTwo: arr2))
 ```
-**#Challenge 4:**
+**# Challenge 4:**
 
 Q. Write a function to perform replace all operation in an array?
 
@@ -130,7 +130,7 @@ var myArray = [1,2,3,1,2]
 print(replaceAll(myArray, term: 1, with: 4)) // [4,2,3,4,2]
 ```
 
-**#Challenge 5:**
+**# Challenge 5:**
 
 Q. Write a function to return the number of vowels in a sentence?
 
@@ -159,7 +159,7 @@ let myString = "I want to know the number of vowels in the sentence"
 print(numberOfVowels(in: myString)) // 15
 ```
 
-**#Challenge 6:**
+**# Challenge 6:**
 
 Q. Write a function to reverse a string?
 
@@ -181,7 +181,7 @@ let myStr = "Hello world!"
 print(reverseString(input: myStr)) //!dlrow olleH
 ```
 
-**#Challenge 7:**
+**# Challenge 7:**
 
 Q. Write a function to return the character with maximum occurance in a sentence?
 
@@ -209,7 +209,7 @@ let myStr = "Hello World"
 print("Most repeated character is: \(mostRepeatedCharacter(in: myStr))") // Most repeated character is: l
 ```
 
-**#Challenge 8:**
+**# Challenge 8:**
 
 Q. Write a function to capitalize first letter of each word in a sentence?
 
@@ -229,7 +229,7 @@ let myStr = "hello world again"
 print(capitalizeEachLetter(in: myStr)) // Hello World Again
 ```
 
-**#Challenge 9:**
+**# Challenge 9:**
 
 Q. Write a function to determine if two sentences are anagram?
 --
@@ -266,7 +266,7 @@ let str2 = "Rescue"
 print(isAnagram(sentenceA: str1, sentenceB: str2)) //true
 ```
 
-**#Challenge 10:**
+**# Challenge 10:**
 
 Q. Write a function to determine if two sentences are anagram?
 --
@@ -303,7 +303,7 @@ let str2 = "Rescue"
 print(isAnagram(sentenceA: str1, sentenceB: str2)) //true
 ```
 
-**#Challenge 11:**
+**# Challenge 11:**
 
 Q. Write a function to determine if two words are palindromes?
 --
