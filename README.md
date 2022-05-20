@@ -2,10 +2,19 @@
 > Click ⭐if you like the project. Pull Requests are highly appreciated. Follow me @faisalkarimi for technical updates.
 ---
 
-**Challenges**
-
-| [Challenge 1](#challenge-1) | [Challenge 2](#challenge-2) | [Challenge 3](#challenge-3) | [Challenge 4](#challenge-4) | [Challenge 5](#challenge-5) |[Challenge 6](#challenge-6) | [Challenge 7](#challenge-7) | [Challenge 8](#challenge-8) | [Challenge 9](#challenge-9) | [Challenge 10](#challenge-10)
-| [Challenge 11](#challenge-11) |
+No. | **Challenges**
+---- | ----------------
+|1.| [Given a string of characters, return a substring of unique characters?](#challenge-1)
+|2.| [Write a function to compare if arms of two individuals are equally strong?](#challenge-2)
+|3.| [Write a function to determine if two arrays are similar?](#challenge-3)
+|4.| [Write a function to perform replace all operation in an array?](#challenge-4) 
+|5.| [Write a function to return the number of vowels in a sentence?](#challenge-5)
+|6.| [Write a function to reverse a string?](#challenge-6)  
+|7.| [Write a function to return the character with maximum occurance in a sentence?](#challenge-7)  
+|8.| [Write a function to capitalize first letter of each word in a sentence?](#challenge-8)  
+|9.| [Write a function to determine if two sentences are anagram?](#challenge-9)  
+|10.| [Write a function to determine if two words are palindromes?](#challenge-10)
+|11.| [Given an array of numbers, return indices of two items that sums up to a target?](#challenge-11) 
 
 #### **Challenge 1:**
 
@@ -259,43 +268,6 @@ print(isAnagram(sentenceA: str1, sentenceB: str2)) //true
 
 #### **Challenge 10:**
 
-Q. Write a function to determine if two sentences are anagram?
---
-Note: An anagram is a word or phrase that's formed by rearranging the letters of another word or phrase.
-
-**Solution:**
-
-```swift
-    //Takes two strings as arguments and returns a boolean
-func isAnagram(sentenceA: String?, sentenceB: String?) -> Bool {
-    if (sentenceA == nil || sentenceB == nil) || sentenceA?.count != sentenceB?.count {
-        return false
-    }
-    var str1 = [String]()
-    var str2 = [String]()
-    
-    for letter in sentenceA!.lowercased().sorted() {
-        str1.append(String(letter))
-    }
-    
-    for letter in sentenceB!.lowercased().sorted() {
-        str2.append(String(letter))
-    }
-    
-    return String(str1.joined()) == String(str2.joined())
-}
-```
-**Usage:**
-
-```swift
-let str1 = "secure"
-let str2 = "Rescue"
-
-print(isAnagram(sentenceA: str1, sentenceB: str2)) //true
-```
-
-#### **Challenge 11:**
-
 Q. Write a function to determine if two words are palindromes?
 --
 Note: A palindrome is a word, sentence, verse, or even number that reads the same backward or forward.
@@ -314,4 +286,37 @@ func isPalindrome(word: String) -> Bool {
 let str = "civic"
 
 print(isPalindrome(word: str)) //true
+```
+
+#### **Challenge 11:**
+
+Q. Given an array of numbers, return indices of two items that sums up to a target?
+--
+Note: You should come up with a time complexity of O(N)
+
+**Solution:**
+
+```swift
+    //Takes an array and a number & returns two indices that sum up to the number
+func findItems(at array: [Int], thatEquals toTarget: Int) -> [Int] {
+    var result = [Int]()
+    for item in array {
+        let search = array.firstIndex(of: toTarget - item)
+        let itemIndex = array.firstIndex(of: item)
+        if search != nil && search != itemIndex {
+            result.append(itemIndex!)
+            result.append(search!)
+            break
+        }
+    }
+    
+    return result
+}
+```
+**Usage:**
+
+```swift
+let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+print(findItems(at: num, thatEquals: 5)) //[0, 3]
 ```
